@@ -1,0 +1,230 @@
+# ============================================================
+# JOB AGENT CONFIGURATION — Sai Keerthana Arun
+# ============================================================
+
+# --- Your Profile ---
+candidate:
+  name: "Sai Keerthana Arun"
+  email: "saikeerthana.arun@gmail.com"
+  phone: "+44 7XXXXXXXXX"  # ← Fill in your UK number
+  location: "Brownhills, UK"
+  linkedin_url: "https://www.linkedin.com/in/sai-keerthana-arun"  # ← Verify this URL
+  portfolio_url: "https://sai-keerthana-arun.onrender.com"
+  right_to_work: "UK"
+
+# ─────────────────────────────────────────────────
+# TARGET ROLES
+# Strategy: SEARCH BROAD → SCORE STRICT
+# Wide search queries catch more jobs, then Claude's
+# strict 7.5+ scoring filters to only the best 5.
+# ─────────────────────────────────────────────────
+roles:
+  - title: "UX Researcher"
+    search_queries:
+      - "UX Researcher"
+      - "User Researcher"
+      - "Design Researcher"
+      - "UX Research"
+
+  - title: "Human-AI Interaction Researcher"
+    search_queries:
+      - "AI Researcher"
+      - "HCI Researcher"
+      - "Human AI"
+      - "Responsible AI"
+
+  - title: "AI UX Designer / Researcher"
+    search_queries:
+      - "AI UX"
+      - "AI Product Designer"
+      - "AI Designer"
+
+  - title: "Responsible AI Researcher"
+    search_queries:
+      - "AI Ethics"
+      - "AI Safety"
+      - "AI Governance"
+
+  - title: "Product Researcher"
+    search_queries:
+      - "Product Researcher"
+      - "Insights Researcher"
+
+# ─────────────────────────────────────────────────
+# EXCLUSIONS — companies and titles to always skip
+# ─────────────────────────────────────────────────
+excluded_companies:
+  - "tesco"
+  - "one stop"
+  - "one stop stores"
+
+excluded_title_keywords:
+  - "AI trainer"
+  - "data labeler"
+  - "data labeller"
+  - "annotation"
+  - "content moderator"
+  - "prompt rater"
+  - "RLHF"
+  - "ML engineer"
+  - "machine learning engineer"
+  - "data scientist"
+  - "data engineer"
+  - "data analyst"
+  - "DevOps"
+  - "backend engineer"
+  - "cloud engineer"
+  - "site reliability"
+  - "SRE"
+  - "security engineer"
+  - "QA engineer"
+  - "test engineer"
+  - "sales"
+  - "marketing"
+  - "recruiter"
+  - "account manager"
+
+# ─────────────────────────────────────────────────
+# LOCATION PREFERENCES — UK, EU, Bengaluru only. No US.
+# ─────────────────────────────────────────────────
+locations:
+  # UK
+  - "London"
+  - "Cambridge"
+  - "Edinburgh"
+  - "Manchester"
+  - "Birmingham"
+  - "United Kingdom"
+  # EU
+  - "Berlin"
+  - "Amsterdam"
+  - "Dublin"
+  - "Paris"
+  - "Munich"
+  - "Stockholm"
+  - "Zurich"
+  # India — Bengaluru only
+  - "Bangalore"
+  - "Bengaluru"
+  # Remote (UK/EU based)
+  - "Remote"
+
+# Locations to EXCLUDE
+excluded_locations:
+  - "United States"
+  - "US"
+  - "USA"
+  - "New York"
+  - "San Francisco"
+  - "Seattle"
+  - "Austin"
+  - "Los Angeles"
+  - "Boston"
+  - "Chicago"
+
+# ─────────────────────────────────────────────────
+# JOB PREFERENCES
+# ─────────────────────────────────────────────────
+preferences:
+  min_salary: 35000
+  currency: "GBP"
+  experience_level:
+    - "entry"
+    - "junior"
+    - "mid"
+    - "graduate"
+  job_type:
+    - "full-time"
+  remote_ok: true
+  visa_sponsorship_needed: false
+  # Only include jobs scoring 7+ in the daily report
+  # Claude scoring is already strict — 7+ means genuinely worth your time
+  min_score: 7.0
+
+# ─────────────────────────────────────────────────
+# GREENHOUSE COMPANY BOARDS TO MONITOR
+# These companies are known to hire for your target roles
+# ─────────────────────────────────────────────────
+greenhouse_boards:
+  # AI / LLM companies (Human-AI, Responsible AI roles)
+  - "anthropic"
+  - "openai"
+  - "deepmind"
+  - "cohere"
+  - "huggingface"
+  - "stability"
+  - "adept"
+  - "inflection"
+  - "mistral"
+  # Product / Design-led companies (UX Research roles)
+  - "figma"
+  - "notion"
+  - "canva"
+  - "miro"
+  - "intercom"
+  - "contentful"
+  - "airtable"
+  - "linear"
+  # Fintech (UX Research, Product Research)
+  - "revolut"
+  - "monzo"
+  - "wise"
+  - "checkout"
+  - "starling"
+  # Tech companies with UK/EU presence
+  - "stripe"
+  - "spotify"
+  - "deliveroo"
+  - "google"
+  - "meta"
+  - "elastic"
+  - "snyk"
+  - "improbable"
+  - "benevolentai"
+
+# Lever company boards
+lever_companies:
+  - "netflix"
+  - "cloudflare"
+  - "databricks"
+  - "vercel"
+
+# ─────────────────────────────────────────────────
+# DAILY SCHEDULE
+# ─────────────────────────────────────────────────
+schedule:
+  run_time: "08:00"
+  timezone: "Europe/London"
+  jobs_per_day: 5
+
+# ─────────────────────────────────────────────────
+# EMAIL REPORT
+# ─────────────────────────────────────────────────
+# Setup: myaccount.google.com → Security → 2-Step Verification ON
+# Then: myaccount.google.com/apppasswords → create "Job Agent"
+email_report:
+  enabled: true
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  sender_email: "saikeerthana.arun@gmail.com"
+  sender_password: ""  # ← 16-char Gmail App Password here
+  recipient_email: "saikeerthana.arun@gmail.com"
+
+# ─────────────────────────────────────────────────
+# API KEYS
+# ─────────────────────────────────────────────────
+api_keys:
+  anthropic: ""           # or set ANTHROPIC_API_KEY env var
+  adzuna_app_id: ""       # Free: https://developer.adzuna.com/
+  adzuna_app_key: ""      # Free: https://developer.adzuna.com/
+  reed: ""                # Free: https://www.reed.co.uk/developers
+
+# ─────────────────────────────────────────────────
+# PATHS
+# ─────────────────────────────────────────────────
+paths:
+  resume: "./resume.pdf"
+  resume_text: "./resume.txt"
+  output_dir: "./output"
+  logs_dir: "./logs"
+  db_path: "./jobs.db"

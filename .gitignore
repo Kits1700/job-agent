@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Output (generated daily, also emailed)
+output/*.docx
+output/*.js
+
+# Logs (uploaded as artifacts instead)
+logs/*.log
+
+# Local config with secrets (use GitHub Secrets instead)
+# config.yaml  ← uncomment this if you don't want config in repo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Resume PDF (stored as GitHub Secret or uploaded separately)
+# resume.pdf

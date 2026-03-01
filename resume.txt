@@ -1,0 +1,90 @@
+Sai Keerthana Arun
+Email: saikeerthana.arun@gmail.com
+Portfolio: https://sai-keerthana-arun.onrender.com
+LinkedIn: Sai Keerthana Arun
+Github: Profile
+
+SUMMARY
+User Researcher and Human-Computer Interaction specialist with experience conducting usability testing, moderating sessions, interviewing participants, and supporting data analysis for AI-powered systems. Skilled in running structured research studies, synthesising qualitative and quantitative findings, and collaborating with cross-functional teams to improve user experience. Strong attention to detail, reliability, and technical fluency across research and engineering environments.
+
+EDUCATION
+University of Nottingham, Nottingham, United Kingdom (September 2024 - September 2025)
+MSc Human-Computer Interaction - With Distinction
+- Thesis: Designing explainable AI interfaces to reduce overreliance in Human-LLM interaction
+- Modules: Human Performance, Mixed Reality, Data Science & ML, Human-Computer Systems
+- Scholarship: South Asia Postgraduate Excellence Award
+
+R.V. College of Engineering (RVCE), Bangalore, Karnataka, India (August 2018 - August 2022)
+B.E. Computer Science and Engineering - With Distinction
+- Final Project: Survey on Driver Drowsiness Detection Systems in ADAS
+- Relevant Modules: Programming in Python, Web Technology, Design Thinking, Artificial Intelligence and Machine Learning
+
+RELEVANT WORK EXPERIENCE
+
+Software Development Graduate (Graduate Programme), One Stop (Tesco Group), Brownhills, UK (September 2025 - Present)
+- Working with MuleSoft to design integration solutions connecting internal retail systems and services.
+- Supporting API design, data flow mapping, and cross-system communication.
+- Collaborating with engineering and business teams to clarify requirements and system behaviour.
+
+Project Associate, SPIRE Lab, Indian Institute of Science (IISc), Bangalore, Karnataka, India (November 2022 - September 2024)
+English Gyani Project:
+- Led human-AI interaction design and user research for an AI-powered language learning tool adopted by 100+ users.
+- Conducted ethnographic studies and surveys to understand how learners interpret and act on AI-generated feedback.
+- Designed wireframes and interactive prototypes that improved learner engagement by ~40%, focusing on clarity and user control.
+- Designed human-in-the-loop feedback mechanisms allowing users to respond to and shape AI outputs.
+- Facilitated co-creation workshops with teachers and learners to centre user intent in interface and feedback design.
+- Worked with engineers and product managers to align frontend AI interactions with backend model behaviour and constraints.
+
+Associate Engineer, ADAS APT, Qualcomm, Bangalore, Karnataka, India (May 2022 - November 2022)
+- Developed Python and C++ automation frameworks to validate automotive chip modules.
+- Improved product reliability through standardised QA pipelines and CI/CD integration.
+- Collaborated with cross-functional teams to validate system performance at scale.
+
+Interim Engineering Intern, ADAS APT, Qualcomm, Bangalore, Karnataka, India (February 2022 - May 2022)
+- Ported the Surround View Monitor (SVM) system to a next-generation chipset.
+
+Summer Intern, Windows on Snapdragon, Qualcomm, Bangalore, Karnataka, India (May 2021 - July 2021)
+- Built Python automation tools that reduced debugging time by 20%.
+- Created a Microsoft Azure chatbot for internal workflow automation, improving team efficiency.
+
+PROJECTS
+
+Encouraging Thought Before Completion - LLM Friction & Trust Study (Mixed Methods) (July 2025 - September 2025)
+- Designed and conducted a mixed-methods study (n=40) examining how interaction friction affects reliance on LLMs.
+- Built a custom React + GPT-4o research platform to compare friction vs no-friction interaction workflows.
+- Measured trust, workload (NASA-TLX), and reliance, supported by qualitative interviews.
+- Found that task-specific friction increased cognitive engagement and calibrated trust without harming user experience.
+- Produced design implications for explainable and intentional human-AI interaction in knowledge-work contexts.
+
+Smart IoT Safety Harness (October 2020 - Present)
+- Designed and developed an IoT-based safety harness using Raspberry Pi and sensors to monitor worker safety in real time.
+- Engineered a smart alert system switching to Bluetooth when cellular networks are unavailable.
+- Built a real-time dashboard using JavaScript to track falls, height, and hook continuity.
+- Conducted user testing and iterative usability improvements.
+
+Sonnet Generator Using LSTM, IEEE Ada Lovelace Hackathon Winner (September 2020 - October 2020)
+- Developed a Flask-based API serving an LSTM model for real-time text generation.
+- Implemented an LSTM architecture for NLP to generate coherent sonnets.
+- Optimised model and API latency for smooth real-time interaction.
+- Designed a simple web interface for intuitive interaction with AI-generated output.
+
+PUBLICATIONS
+Smart Electricity, Water, and Air Quality Monitoring System, 2023
+
+SKILLS
+UX Research: Mixed-methods research, usability testing, ethnography, participatory design
+Human-AI Interaction: Explainable AI interfaces, Trust calibration and ethics in AI, AI feedback loops and human-in-the-loop interaction
+Design: Wireframing and prototyping, Accessibility-aware design, Data visualisation
+Tools & Technologies: Figma, Python, HTML, CSS, JavaScript, React, Git, Unity XR, Cursor, Claude MCP
+AI / ML Exposure: LLM interaction patterns, Machine-learning fundamentals
+Languages: English (Fluent)
+
+CERTIFICATIONS
+- Google UX Design Professional Certificate
+- Meta Front-End Developer Professional Certificate
+- Generative AI and Large Language Model Certificate
+- Supervised Machine Learning: Regression and Classification Certificate
+
+AWARDS & ACTIVITIES
+- Winner, IEEE Ada Lovelace Hackathon (2020)
+- Vice President, R.V. Debating Society (2021-2022)

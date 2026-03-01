@@ -1,0 +1,65 @@
+name: Daily Job Agent
+
+on:
+  schedule:
+    - cron: '55 7 * * *'  # 7:55 UTC ≈ 8:00 AM UK time
+  workflow_dispatch:       # Manual trigger button
+
+jobs:
+  find-jobs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+          npm install -g docx
+
+      # Inject secrets into config.yaml (replaces placeholders)
+      - name: Inject secrets into config
+        run: |
+          sed -i "s|sender_password: \"\"|sender_password: \"${{ secrets.GMAIL_APP_PASSWORD }}\"|" config.yaml
+          sed -i "s|phone: \"+44 7XXXXXXXXX\"|phone: \"${{ secrets.PHONE }}\"|" config.yaml
+
+      - name: Run Job Agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python main.py
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-report-${{ github.run_number }}
+          path: |
+            output/*.docx
+            logs/*.log
+          retention-days: 30
+
+      - name: Save database
+        if: always()
+        run: |
+          git config user.name "Job Agent Bot"
+          git config user.email "bot@jobagent.local"
+          git checkout -- config.yaml
+          git add -f jobs.db 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Update jobs.db — $(date +%Y-%m-%d)"
+          git push || true
